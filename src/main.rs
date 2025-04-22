@@ -5,5 +5,4 @@ fn main() {
     let say_hello = hello("Stackie");
     println!("{}", say_hello);
     let vec: Vec<isize> = Vec::new();
-    if 100 > i32::MAX {}
 }
