@@ -1,25 +1,8 @@
-pub fn hello(name: &str) -> String {
-    let hello_string = format!("Hello, {}!", name);
-    hello_string
-}
+use dummy_rust_project::hello;
 
-pub fn goodbye(name: &str) -> String {
-    let goodbye_string = format!("Goodbye, {}!", name);
-    goodbye_string
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-    #[test]
-    fn hello_stackie_matches() {
-        let hello_string = hello("Stackie");
-        assert_eq!("Hello, Stackie!", &hello_string)
-    }
-
-    #[test]
-    fn goodbye_stackie_matches() {
-        let goodbye_string = goodbye("Stackie");
-        assert_eq!("Goodbye, Stackie!", &goodbye_string)
-    }
+fn main() {
+    let unused_var: i32;
+    let say_hello = hello("Stackie");
+    println!("{}", say_hello);
+    let vec: Vec<isize> = Vec::new();
 }
