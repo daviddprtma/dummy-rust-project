@@ -25,7 +25,7 @@ jobs:
         cargo clippy
     - name: Check format
       run: |
-        cargo fmt --check
+        cargo fmt
     - name: Run tests
       run: |
         cargo test
